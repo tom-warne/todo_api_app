@@ -11,7 +11,7 @@ gem 'sqlite3'
 gem 'puma', '~> 3.11'
 
 # Build JSON APIs with ease.
-gem 'active_model_serializers', '~> 0.10.0'
+gem 'active_model_serializers', '~> 0.10.6'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
