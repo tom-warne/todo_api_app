@@ -1,7 +1,7 @@
 class API::V1::TagsController < API::V1::BaseController
 
   def create
-    render status: :ok, json: Tag.create(tag_params)
+    render status: :created, json: Tag.create(tag_params)
   end
 
   def index

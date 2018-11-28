@@ -1,7 +1,7 @@
 class API::V1::TasksController < API::V1::BaseController
 
   def create
-    render status: :ok, json: Task.create(task_params)
+    render status: :created, json: Task.create(task_params)
   end
 
   def destroy
