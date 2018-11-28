@@ -19,7 +19,7 @@ class API::V1::TasksController < API::V1::BaseController
   private
 
   def task_params
-    ActiveModelSerializers::Deserialization.jsonapi_parse!(params, only: %i[id title tags])
+    parse!(only: %i[id tags title])
   end
 
 end

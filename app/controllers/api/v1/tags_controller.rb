@@ -15,7 +15,7 @@ class API::V1::TagsController < API::V1::BaseController
   private
 
   def tag_params
-    ActiveModelSerializers::Deserialization.jsonapi_parse!(params, only: %i[id title])
+    parse!(only: %i[id title])
   end
 
 end
