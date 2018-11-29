@@ -28,8 +28,16 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mingw mri x64_mingw]
+  # Fixture replacement for creating test factories
+  gem 'factory_bot_rails', '~> 4.11.1'
   # Add JSON matchers for RSpec
   gem 'json_spec', '~> 1.1.5'
+  # Restores `assigns` and `assert_template` for `shoulda-matchers`
+  gem 'rails-controller-testing', '~>1.0.2'
   # Testing Framework
   gem 'rspec-rails', '~> 3.5'
+  # Add shoulda matchers for associations in RSpec
+  gem 'shoulda-matchers', '4.0.0.rc1'
+  # Code test coverage analysis
+  gem 'simplecov', '~> 0.16.1', require: false
 end
