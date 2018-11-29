@@ -1,16 +1,19 @@
 # Start test coverage report first
-require 'simplecov'
-  SimpleCov.start
+require 'support/simplecov'
 require 'spec_helper'
 require File.expand_path('../../config/environment', __FILE__)
 
 # Add additional requires below this line. Rails is not loaded until this point!
 require 'rspec/rails'
+require 'support/shoulda_matchers'
 
 # Ensure the correct ENV and protect the production environment
 ENV['RAILS_ENV'] ||= 'test'
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 
+# SimpleCov needs eager loading to see files without associated test files.
+# Leave commented in commits.  Uncomment locally to produce coverage file.
+Rails.application.eager_load!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -34,14 +37,6 @@ begin
 rescue ActiveRecord::PendingMigrationError => e
   puts e.to_s.strip
   exit 1
-end
-
-# Setup matchers for associations
-Shoulda::Matchers.configure do |config|
-  config.integrate do |with|
-    with.test_framework :rspec
-    with.library        :rails
-  end
 end
 
 RSpec.configure do |config|
