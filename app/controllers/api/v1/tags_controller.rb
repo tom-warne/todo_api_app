@@ -15,7 +15,9 @@ class API::V1::TagsController < API::V1::BaseController
   private
 
   def tag_params
-    parse!(only: %i[id title])
+    return @tag_params if defined? @tag_params
+
+    @tag_params = parse!(only: %i[id title])
   end
 
 end
