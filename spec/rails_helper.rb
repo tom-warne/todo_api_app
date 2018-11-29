@@ -1,11 +1,17 @@
 # Start test coverage report first
 require 'support/simplecov'
+
+# Require ENV and Spec before Rails
 require 'spec_helper'
 require File.expand_path('../../config/environment', __FILE__)
 
 # Add additional requires below this line. Rails is not loaded until this point!
 require 'rspec/rails'
+
+require 'factory_bot'
+require 'support/database_cleaner'
 require 'support/shoulda_matchers'
+require 'support/shoulda_matchers_extensions'
 
 # Ensure the correct ENV and protect the production environment
 ENV['RAILS_ENV'] ||= 'test'
@@ -40,6 +46,17 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 
 RSpec.configure do |config|
+  config.include FactoryBot::Syntax::Methods
+  config.include Rails.application.routes.url_helpers
+  config.include ShouldaMatchersExtensions
+
+  # Schedule database cleaning around every test
+  config.around(:each) do |example|
+    DatabaseCleaner.cleaning do
+      example.run
+    end
+  end
+
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 

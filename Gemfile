@@ -38,6 +38,11 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   # Add shoulda matchers for associations in RSpec
   gem 'shoulda-matchers', '4.0.0.rc1'
+end
+
+group :test do
+  # Stratagies for cleaning the database during the test suite
+  gem 'database_cleaner', '~> 1.7.0'
   # Code test coverage analysis
   gem 'simplecov', '~> 0.16.1', require: false
 end

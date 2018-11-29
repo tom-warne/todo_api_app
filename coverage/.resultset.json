@@ -19,7 +19,7 @@
         1,
         null,
         1,
-        0,
+        2,
         null,
         null
       ],
@@ -56,7 +56,7 @@
         1,
         null,
         1,
-        0,
+        2,
         null,
         null,
         1,
@@ -74,11 +74,11 @@
         1,
         null,
         1,
-        0,
+        2,
         null,
-        0,
+        2,
         null,
-        0,
+        2,
         null,
         null,
         null,
@@ -124,10 +124,6 @@
       "/Users/Tom/dev/todo_api_app/app/serializers/tag_serializer.rb": [
         1,
         1,
-        null,
-        1,
-        0,
-        null,
         null
       ],
       "/Users/Tom/dev/todo_api_app/app/serializers/task_serializer.rb": [
@@ -138,7 +134,7 @@
         1,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
@@ -147,6 +143,6 @@
         null
       ]
     },
-    "timestamp": 1543518707
+    "timestamp": 1543528907
   }
 }

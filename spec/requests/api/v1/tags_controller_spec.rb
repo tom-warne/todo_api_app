@@ -1,4 +1,4 @@
-equire "rails_helper"
+require "rails_helper"
 
 describe API::V1::TagsController do
 
