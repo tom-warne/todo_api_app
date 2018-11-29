@@ -1,7 +1,7 @@
 class API::V1::TagsController < API::V1::BaseController
 
   def create
-    render status: :created, json: Tag.create(tag_params)
+    render status: :created, json: Tag.create(tag_params.except(:id))
   end
 
   def index
@@ -9,7 +9,7 @@ class API::V1::TagsController < API::V1::BaseController
   end
 
   def update
-    render status: :ok, json: Tag.find(tag_params.delete(:id)).update(tag_params)
+    render status: :ok, json: Tag.update(tag_params.delete(:id), tag_params)
   end
 
   private
