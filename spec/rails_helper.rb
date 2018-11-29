@@ -9,6 +9,7 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rspec/rails'
 
 require 'factory_bot'
+require 'support/active_model_serializers_extensions'
 require 'support/database_cleaner'
 require 'support/shoulda_matchers'
 require 'support/shoulda_matchers_extensions'
@@ -46,6 +47,7 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 
 RSpec.configure do |config|
+  config.include ActiveModelSerializersExtensions
   config.include FactoryBot::Syntax::Methods
   config.include Rails.application.routes.url_helpers
   config.include ShouldaMatchersExtensions
