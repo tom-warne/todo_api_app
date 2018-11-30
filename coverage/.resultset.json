@@ -1,0 +1,148 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/Tom/dev/todo_api_app/app/channels/application_cable/channel.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Tom/dev/todo_api_app/app/channels/application_cable/connection.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Tom/dev/todo_api_app/app/controllers/api/v1/base_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        10,
+        null,
+        null
+      ],
+      "/Users/Tom/dev/todo_api_app/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/Tom/dev/todo_api_app/app/controllers/api/v1/tags_controller.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        null,
+        1,
+        6,
+        null,
+        4,
+        null,
+        null,
+        null
+      ],
+      "/Users/Tom/dev/todo_api_app/app/controllers/api/v1/tasks_controller.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        null,
+        1,
+        8,
+        null,
+        6,
+        null,
+        6,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Tom/dev/todo_api_app/app/jobs/application_job.rb": [
+        1,
+        null
+      ],
+      "/Users/Tom/dev/todo_api_app/app/mailers/application_mailer.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Tom/dev/todo_api_app/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/Tom/dev/todo_api_app/app/models/tag.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/Tom/dev/todo_api_app/app/models/tag_task.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/Tom/dev/todo_api_app/app/models/task.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/Tom/dev/todo_api_app/app/serializers/tag_serializer.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/Tom/dev/todo_api_app/app/serializers/task_serializer.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        11,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1543535965
+  }
+}
