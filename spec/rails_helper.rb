@@ -20,7 +20,10 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 
 # SimpleCov needs eager loading to see files without associated test files.
 # Leave commented in commits.  Uncomment locally to produce coverage file.
-Rails.application.eager_load!
+#
+# TODO Have this controlled via an ENV variable -TW
+#
+# Rails.application.eager_load!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
