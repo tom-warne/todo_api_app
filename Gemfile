@@ -30,8 +30,6 @@ group :development, :test do
   gem 'byebug', platforms: %i[mingw mri x64_mingw]
   # Fixture replacement for creating test factories
   gem 'factory_bot_rails', '~> 4.11.1'
-  # Add JSON matchers for RSpec
-  gem 'json_spec', '~> 1.1.5'
   # Restores `assigns` and `assert_template` for `shoulda-matchers`
   gem 'rails-controller-testing', '~>1.0.2'
   # Testing Framework
