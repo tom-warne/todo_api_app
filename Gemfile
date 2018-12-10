@@ -35,7 +35,7 @@ group :development, :test do
   # Restores `assigns` and `assert_template` for `shoulda-matchers`
   gem 'rails-controller-testing', '~>1.0.2'
   # Testing Framework
-  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails', '~> 3.8'
   # Add shoulda matchers for associations in RSpec
   gem 'shoulda-matchers', '4.0.0.rc1'
 end
