@@ -5,7 +5,12 @@ class API::V1::TagsController < API::V1::BaseController
   end
 
   def index
-    render status: :ok, json: Tag.all
+    tags = Tag.where("title LIKE ?",  "%#{params[:q]}%")
+
+    # tags = Tag.where(title: /#{params[:q]}/
+
+
+    render status: :ok, json: tags
   end
 
   def update
